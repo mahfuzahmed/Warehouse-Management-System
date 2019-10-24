@@ -1,0 +1,21 @@
+connect to system and create a user 'warehouse' with password '123' and grant all privileges
+
+
+then input the following DDLs
+
+
+
+
+create table admin(name varchar2(50), username varchar2(50), password varchar2(50));
+
+create table sales(name varchar2(50), username varchar2(50), password varchar2(50));
+
+create table item(ID number(38), name varchar2(50), brand varchar2(50), type  varchar2(50), qty number(38));
+
+
+insert into admin values('Mahfuz Ahmed','mahfuz','123');
+insert into admin values('Tamzid Karim','tamzid','123');
+
+insert into sales values('Syed Abrar','abrar','321');
+
+

@@ -1,0 +1,62 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Fri Oct 20 03:47:21 2017
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect warehouse/123;
+Connected.
+SQL> desc admin;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(50)
+ USERNAME                                  NOT NULL VARCHAR2(50)
+ PASSWORD                                           VARCHAR2(50)
+
+SQL> desc sales;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(50)
+ USERNAME                                  NOT NULL VARCHAR2(50)
+ PASSWORD                                           VARCHAR2(50)
+
+SQL> desc item;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(38)
+ NAME                                      NOT NULL VARCHAR2(50)
+ BRAND                                              VARCHAR2(50)
+ TYPE                                               VARCHAR2(50)
+ QTY                                                NUMBER(38)
+
+SQL>
+
+
+
+create table sales
+(name varchar2(50),
+ username varchar2(50),
+ password varchar2(50));
+
+insert into sales values('abrar','abrar','12345678');
+
+create table item
+( ID number(38),
+  name varchar2(50),
+  brand varchar2(50),
+  type  varchar2(50),
+  qty number(38));
+
+
+insert into item values(11660001,'Pran Mango Bar','Pran','food',6000);
+insert into item values(11660002,'Lux Soap','Lux','Cosmetics',6000);
+insert into item values(11660003,'Coca Cola','Coca Cola','Beverage',6000);
+
+insert into item values(11660004,'Dairy Milk Chocolate','Cadbury','food',4000);
+insert into item values(11660005,'BBQ Chanachur','Bombay Sweets','food',2000);
+insert into item values(11660006,'Mercurial F-50','Nike','Shoes',500);
+insert into item values(11660007,'Fresh Dinking Water','Fresh','Beverage',10000);
+
+insert into item values(11660008,'Lays Potato Slices','Lays','food',2000);
+
+
+
